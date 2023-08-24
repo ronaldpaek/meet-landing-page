@@ -1,0 +1,95 @@
+:root {
+  /* Colors */
+  --color-muted-purple: #87879d;
+  --color-off-white: #fafafa;
+  --color-teal: #4d96a9;
+  --color-light-gray: #d8d8d8;
+  --color-dark-purple: #28283d;
+  --color-purple: #855fb1;
+  --color-white: #ffffff;
+  --color-light-cyan: #8fe3f9;
+  --color-muted-purple-transparent: #87879d40;
+
+  /* Font Family */
+  --font-family: "Red Hat Display", sans-serif;
+
+  /* Font Weights */
+  --font-weight-medium: 500;
+  --font-weight-ultra-bold: 900;
+
+  /* Body */
+  --body-font-size: 16px;
+  --body-line-height: 1.625;
+
+  /* Overline */
+  --overline-font-size: 16px;
+  --overline-line-height: 1.625;
+  --overline-character-spacing: 4px;
+
+  /* H1 */
+  --h1-font-size: 40px;
+  --h1-line-height: 1.1;
+
+  /* H2 */
+  --h2-font-size: 32px;
+  --h2-line-height: 1.125;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--body-line-height);
+  color: var(--color-muted-purple);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  font-weight: var(--font-weight-ultra-bold);
+  color: var(--color-dark-purple);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+  font-weight: var(--font-weight-ultra-bold);
+  color: var(--color-dark-purple);
+}
+
+.overline {
+  font-size: var(--overline-font-size);
+  line-height: var(--overline-line-height);
+  font-weight: var(--font-weight-ultra-bold);
+  color: var(--color-muted-purple);
+}
+
+.overline.uppercase {
+  text-transform: uppercase;
+  letter-spacing: var(--overline-character-spacing);
+  color: var(--color-teal);
+}
+
+@media (min-width: 768px) {
+  :root {
+    /* H1 */
+    --h1-font-size: 48px;
+    --h1-line-height: 1;
+
+    /* H2 */
+    --h2-font-size: 40px;
+    --h2-line-height: 1.1;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    /* Body */
+    --body-font-size: 18px;
+    --body-line-height: 1.44;
+
+    /* H1 */
+    --h1-font-size: 64px;
+    --h1-line-height: 1.125;
+  }
+}
