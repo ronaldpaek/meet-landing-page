@@ -15,36 +15,45 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
     <div class="container">
+      <!-- Header: Contains Navigation and Hero Section -->
       <header>
+        <!-- Navigation -->
         <nav>
           <a href="#">
-            <img src="./assets/logo.svg" alt="logo" />
+            <img src="./assets/logo.svg" alt="Meet Logo" />
           </a>
         </nav>
-        <section class="hero">
-          <img src="/assets/tablet/image-hero.png" alt="hero" />
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <!-- Hero Images -->
+          <img
+            class="main-hero"
+            src="/assets/tablet/image-hero.png"
+            alt="Main hero image"
+          />
           <img
             class="hero-image-left"
             src="/assets/desktop/image-hero-left.png"
-            alt="hero-left"
+            alt="Left side of the hero image"
           />
           <img
             class="hero-image-right"
             src="/assets/desktop/image-hero-right.png"
-            alt="hero-right"
+            alt="Right side of the hero image"
           />
+          <!-- Hero Text Content -->
           <div class="hero-container">
             <div class="hero-content">
-              <h1>Group Chat <span>for Everyone</span></h1>
-              <p>
+              <h1 class="heading">Group Chat <span>for Everyone</span></h1>
+              <p class="subheading">
                 Meet makes it easy to connect with others face-to-face virtually
                 and collaborate across any device.
               </p>
+              <!-- Buttons -->
               <div class="button-container">
                 <button class="button primary">
                   Download <span>v.13</span>
@@ -53,19 +62,40 @@
               </div>
             </div>
           </div>
-          <div></div>
+          <!-- Decorative Element: Separator -->
+          <div class="decorative-separator">
+            <div class="line"></div>
+            <div class="circle">01</div>
+          </div>
         </section>
       </header>
-      <section class="meetings">
-        <div class="images-container">
-          <img src="/assets/desktop/image-woman-in-videocall.jpg" alt="" />
-          <img src="/assets/desktop/image-women-videochatting.jpg" alt="" />
-          <img src="/assets/desktop/image-men-in-meeting.jpg" alt="" />
-          <img src="/assets/desktop/image-man-texting.jpg" alt="" />
+      <!-- Features Section -->
+      <section class="features-section">
+        <!-- Image Gallery -->
+        <div class="container">
+          <div class="images-container">
+            <img
+              src="/assets/desktop/image-woman-in-videocall.jpg"
+              alt="Woman in a video call"
+            />
+            <img
+              src="/assets/desktop/image-women-videochatting.jpg"
+              alt="Women video chatting"
+            />
+            <img
+              src="/assets/desktop/image-men-in-meeting.jpg"
+              alt="Men in a meeting"
+            />
+            <img
+              src="/assets/desktop/image-man-texting.jpg"
+              alt="Man texting"
+            />
+          </div>
         </div>
+        <!-- Features Description -->
         <div class="meetings-container">
-          <p class="overline uppercase">Built for modern use</p>
-          <h2>Smarter meetings, all in one place</h2>
+          <h2 class="overline uppercase subheading">Built for modern use</h2>
+          <h3 class="h2 heading">Smarter meetings, all in one place</h3>
           <p>
             Send messages, share files, show your screen, and record your
             meetings — all in one workspace. Control who can join with
@@ -74,17 +104,17 @@
         </div>
         <div></div>
       </section>
-      <footer>
+      <!-- Promo Section -->
+      <section class="promo-section">
         <div>
-          <h2>Experience more <span>together</span></h2>
-          <p>
+          <h2 class="h2 heading">Experience more <span>together</span></h2>
+          <p class="subheading">
             Stay connected with reliable HD meetings and unlimited one-on-one
             and group video sessions.
           </p>
-          <button class="button primary">
-            Download <span>v.13</span>
+          <button class="button primary">Download <span>v.13</span></button>
         </div>
-      </footer>
+      </section>
     </div>
   </body>
 </html>
