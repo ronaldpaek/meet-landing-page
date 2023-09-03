@@ -396,6 +396,7 @@ h3,
 
   .features-section {
     padding-top: var(--spacing-18);
+    padding-bottom: var(--spacing-19);
   }
 
   .gallery {
